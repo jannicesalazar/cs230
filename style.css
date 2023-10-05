@@ -1,0 +1,25 @@
+* {margin: 25; padding: 10;}
+h1 {color: #333; text-align: center;}
+h2 {color: #555;}
+
+.dish {list-style-type: none; font-size: 1.2em;}
+
+#appetizers { background-color: #f9f9f9; padding: 10px;}
+#entrees {background-color: #f0f0f0; padding: 10px;}
+#desserts {background-color: #e6e6e6; padding: 10px;}
+
+li[class="dish"] {font-weight: bold;}
+
+#appetizers .dish, #entrees .dish, #desserts .dish {color: #aa0000;} 
+
+ul#appetizers li.dish, ul#entrees li.dish, ul#desserts li.dish {border-bottom: 5px solid #ccc;}
+
+ul#appetizers li:not(.dish) {font-style: italic;}
+
+ul#entrees li:active {font-weight: bolder;}
+
+ul#entrees li:hover, ul#appetizers li:hover , ul#desserts li:hover{background-color: #ffbbbb;}
+
+ul#entrees li:nth-child(all), ul#desserts li:nth-child(all) {background-color: #ffffff;}
+
+/*https://www.w3schools.com/html/html_css.asp and https://www.w3schools.com/cssref/sel_nth-child.php*/
