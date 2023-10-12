@@ -1,37 +1,56 @@
 <html>
     <head>
-        
         <style>
-        * { width: 400px;
-            margin: auto;}
-        .corn {
-        background-color: lightsalmon;
-        padding: 50px;
-        border: 2px dashed red;
+            * {width: 400px; margin: auto;}
 
-        }
-        .walk {
-        background-color: lime;
-        padding: 100px;
-        border: 10px dashed forestgreen;
-        height: 500px
-        }
-        .frog {
-        background-color: pink;
-        padding: 50px;
-        border: 2px dashed fuchsia;
-        }
+            .corn {
+                background-color: lightsalmon;
+                padding: 50px;
+                border: 2pt dashed red;
+                position: relative;
+                top: 1em;
+                left: 20px;
+                width: 300px;
+                height: 200px;
+            }
+
+            .walk {
+                background-color: lime;
+                padding: 100px;
+                border: 10px dashed forestgreen;
+                position: absolute;
+                top: 100px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 500px;
+                height: 500px;
+            }
+
+            .frog {
+                background-color: pink;
+                padding: 50px;
+                border: 2px dashed fuchsia;
+                position: fixed;
+                bottom: 2cm;
+                right: 1in;
+                width: 200px;
+                height: 200px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 400px;
+            }
         </style>
     </head>
     <body>
-        <div class="corn"> Hi</div>
-        <div class="walk"> Hello</div>
-        <div class="frog"> Bye</div>
+        <div class="corn">Hi</div>
+        <div class="walk">
+            <img src="car.jpeg" alt="Car Image">
+        </div>
+        <div class="frog">
+            <a href="index.html"> Bye. </a>
+        </div>
     </body>
 </html>
-
-<!--
-position: absolute, fixed, relative
-left/top/right/down
-width/height (and/or min-width, min-height, max-width, max-height)
-size units: % px (and/or pt em cm/in)-->
