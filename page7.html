@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="icon" 
+              type="image/jpeg" 
+              sizes="64x64" 
+              href="smoke.jpeg">
+        <title>Hi</title>
+        <style>
+            body {font-family: Georgia, 'Times New Roman', Times, serif;
+                  margin: 10;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 700px;}
+    
+            .grid-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 800px;
+                width: 100%;}
+    
+            .grid-item {
+                background-color: rgba(68, 186, 255, 0.71);
+                border-radius: 5px;
+                padding: 30px;
+                margin: 10px;
+                flex: 1 0 calc(33.33% - 20px);
+                box-sizing: border-box;
+                text-align: center;}
+    
+            @media screen and (max-width: 700px) {
+                .grid-item {flex: 1 0 calc(50% - 20px);}}
+    
+            @media screen and (max-width: 400px) {
+                .grid-item {flex: 1 0 calc(100% - 20px);}}
+                .icon {font-size: 24px;
+                       margin-right: 5px;}
+        </style>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">
+                <span class="icon">Expand the Page</span> 
+            </div>
+            <div class="grid-item">Or make the Page Smaller
+                <span class="icon"></span> 
+            </div>
+            <div class="grid-item">
+                <span class="icon">Isn't that cool!</span>
+            </div>
+        </div>
+        <div>
+        <a href="index.html"> Back </a>
+    </body>
+</html>
+    
