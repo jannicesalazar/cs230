@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Workout Information</title>
+    </head>
+    <body>
+        <h1>Workout Information Form</h1>
+        <form action="index.html" method="get">
+            Name:
+            <input type="text" id="name" required>
+            <br>
+            <br>
+            Weight:
+            <input type="range" id="weight" min="0" max="100" step="1">
+            <br>
+            <br>
+            Activity Level:
+            <br>
+            <input type="radio" id="sedentary" value="sedentary">
+            <label for="sedentary">Sedentary</label>
+            <br>
+            <input type="radio" id="active" value="active">
+            <label for="active">Active</label>
+            <br>
+            <br>
+            Height:
+            <select id="height" >
+                <option value="short">Short</option>
+                <option value="average">Average</option>
+                <option value="tall">Tall</option>
+            </select>
+            <br>
+            <br>
+            Diet Preferences:
+            <br>
+            <select id="diet" multiple>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="paleo">Paleo</option>
+                <option value="paleo">Any</option>
+            </select>
+            <br>
+            <br>
+            Workout Goals:
+            <br>
+            <input type="checkbox" id="weightLoss"  value="weightLoss">
+            <label for="weightLoss">Weight Loss</label>
+            <br>
+            <input type="checkbox" id="muscleGain" value="muscleGain">
+            <label for="muscleGain">Muscle Gain</label>
+            <br>
+            <input type="checkbox" id="endurance" value="endurance">
+            <label for="endurance">Endurance</label>
+            <br>
+            <br>
+            Email:
+            <input type="email" id="email" required>
+            <br>
+            <br>
+            Date of Birth:
+            <input type="date" id="dob" required>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
